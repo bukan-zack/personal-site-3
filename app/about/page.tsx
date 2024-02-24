@@ -16,7 +16,7 @@ export default function Page() {
                         transition={{ type: "easeInOut", duration: 0.3 }}
                     >
                         <p>
-                            Hey there! I am software developer hailing from Sarawak, Malaysia. My journey into the fascinating realm of programming kicked off in 2019, and it is been a passion-filled adventure ever since.
+                            Hey there! I am software developer hailing from Sarawak, Malaysia. My journey into the fascinating realm of programming kicked off in 2018, and it is been a passion-filled adventure ever since.
                         </p>
                         <p>
                             Currently, I am in cahoots with the caffeine addicts over at BerryByte Limited.  If you are curious about what we are brewing up, feel free to check out BerryByte Limited - they are making waves, and it is worth a peek!
