@@ -104,7 +104,7 @@ export default function Page() {
                             transition={{ type: "easeInOut", duration: 0.3, delay: 0.6 }}
                         >
                             {contacts.map((contact, i) => (
-                                <Link href={contact.href} key={i}>
+                                <Link href={contact.href} target="_blank" key={i}>
                                     {contact.icon}
                                 </Link>
                             ))}
@@ -133,7 +133,7 @@ export default function Page() {
                                 autoFill
                             >
                                 {brands.map((brand, i) => (
-                                    <Link href={brand.href} key={i}>
+                                    <Link href={brand.href} key={i} target="_blank">
                                         <img
                                             src={brand.image}
                                             className="h-12 mx-8" />
