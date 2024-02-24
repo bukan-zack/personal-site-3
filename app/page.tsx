@@ -153,7 +153,7 @@ export default function Page() {
                         transition={{ type: "easeInOut", duration: 0.5 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className="uppercase text-[#3E362F] text-4xl md:text-6xl font-bold">
+                        <h2 className="uppercase text-[#3E362F] text-5xl md:text-6xl font-bold">
                             Work
                         </h2>
                         <p className="mt-2">
