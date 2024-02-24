@@ -22,7 +22,7 @@ export default function Page() {
                             Currently, I am in cahoots with the caffeine addicts over at BerryByte Limited.  If you are curious about what we are brewing up, feel free to check out BerryByte Limited - they are making waves, and it is worth a peek!
                         </p>
                         <p>
-                            If you are keen on teaming up or just want to shoot the breeze, feel free to hit me up anytime. Let's make the tech world even more exciting together!
+                            If you are keen on teaming up or just want to shoot the breeze, feel free to hit me up anytime. Let&apos;s make the tech world even more exciting together!
                         </p>
                     </motion.div>
                 </section>
