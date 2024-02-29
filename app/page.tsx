@@ -57,15 +57,18 @@ const brands = [
 
 const works = [
     {
-        name: "BerryByte Landing Page",
+        name: "BerryByte Limited",
+        description: "Landing Page",
         image: "/works/berry-website.jpeg",
     },
     {
-        name: "BerryByte Dashboard Auth Page",
+        name: "BerryByte Limited",
+        description: "Dashboard Authentication Page",
         image: "/works/berry-shell-auth.png",
     },
     {
         name: "AwesomeMY",
+        description: "Landing Page",
         image: "/works/awesome-my.png",
     },
 ];
@@ -81,7 +84,7 @@ export default function Page() {
                             className="uppercase text-7xl md:text-8xl font-bold tracking-tight"
                             initial={{ opacity: 0, translateY: 100 }}
                             animate={{ opacity: 1, translateY: 0 }}
-                            transition={{ type: "easeInOut", duration: 0.3 }}
+                            transition={{ type: "easeInOut", duration: 0.4 }}
                         >
                             Zackry Rosli
                         </motion.h1>
@@ -90,7 +93,7 @@ export default function Page() {
                         <motion.p
                             initial={{ opacity: 0, translateY: 100 }}
                             animate={{ opacity: 1, translateY: 0 }}
-                            transition={{ type: "easeInOut", duration: 0.3, delay: 0.3 }}
+                            transition={{ type: "easeInOut", duration: 0.4, delay: 0.2 }}
                         >
                             A self-motivated Go expert from Sarawak, Malaysia, with 4 years of experience.
                             Passionate about crafting innovative solutions with precision.
@@ -101,7 +104,7 @@ export default function Page() {
                             className="grid grid-cols-4 gap-4"
                             initial={{ opacity: 0, translateY: 100 }}
                             animate={{ opacity: 1, translateY: 0 }}
-                            transition={{ type: "easeInOut", duration: 0.3, delay: 0.6 }}
+                            transition={{ type: "easeInOut", duration: 0.4, delay: 0.4 }}
                         >
                             {contacts.map((contact, i) => (
                                 <Link href={contact.href} target="_blank" key={i}>
@@ -118,7 +121,7 @@ export default function Page() {
                         className="h-full justify-between px-6 text-center container mx-auto flex flex-col items-center"
                         initial={{ opacity: 0, translateY: 100 }}
                         whileInView={{ opacity: 1, translateY: 0 }}
-                        transition={{ type: "easeInOut", duration: 0.5 }}
+                        transition={{ type: "easeInOut", duration: 0.4 }}
                         viewport={{ once: true }}
                     >
                         <p className="max-w-4xl">
@@ -142,15 +145,15 @@ export default function Page() {
                             </Marquee>
                         </div>
                         <p className="max-w-4xl text-xs italic">
-                            *Collaborations with some of the aforementioned brands may be facilitated by Lusory Limited.
+                            Collaborations with some of the aforementioned brands may be facilitated by Lusory Limited.
                         </p>
                     </motion.div>
                 </section>
-                <section className="mt-12 px-6 py-8 container mx-auto overflow-hidden">
+                <section className="mt-16 px-6 py-8 container mx-auto overflow-hidden">
                     <motion.div
                         initial={{ opacity: 0, translateY: 100 }}
                         whileInView={{ opacity: 1, translateY: 0 }}
-                        transition={{ type: "easeInOut", duration: 0.5 }}
+                        transition={{ type: "easeInOut", duration: 0.4 }}
                         viewport={{ once: true }}
                     >
                         <h2 className="uppercase text-[#3E362F] text-5xl md:text-6xl font-bold">
@@ -159,18 +162,21 @@ export default function Page() {
                         <p className="mt-2">
                             Explore a curated collection of my professional achievements and collaborations with industry-leading brands.
                         </p>
-                        <div className="mt-6 grid md:grid-cols-2 gap-4">
+                        <div className="mt-6 grid md:grid-cols-3 gap-4">
                             {works.map((work, i) => (
                                 <div
-                                    className="md:h-80 relative rounded-lg w-full bg-[#3E362F] group overflow-hidden"
+                                    className="relative rounded-lg w-full bg-[#3E362F] group overflow-hidden"
                                     key={i}
                                 >
                                     <div
-                                        className="z-[69] absolute inset-0 flex-col items-center justify-center opacity-0 group-hover:opacity-100 flex transition ease-in-out duration-500 delay-100"
+                                        className="z-[10] absolute inset-0 flex-col items-center justify-center opacity-0 group-hover:opacity-100 flex transition ease-in-out duration-[400ms] delay-100"
                                     >
-                                        <div className="max-w-xs md:max-w-4xl">
-                                            <p className="text-center text-[#e0d1cb]">
+                                        <div className="max-w-xs text-[#e0d1cb]">
+                                            <p className="text-center font-bold">
                                                 {work.name}
+                                            </p>
+                                            <p className="text-center mt-1">
+                                                {work.description}
                                             </p>
                                         </div>
                                     </div>

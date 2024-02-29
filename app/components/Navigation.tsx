@@ -23,25 +23,28 @@ export function Navigation({
     return (
         <nav
             className={clsx(
-                "w-full z-10 fixed top-0 h-20 flex items-center border-b border-transparent",
-                "transition duration-500 ease-in-out",
-                scrolled && "border-[#3E362F]/20 backdrop-blur-md bg-[#E7DBD6]/50"
+                "w-full z-[100] fixed top-0 h-20 flex items-center",
+                "transition duration-[400ms] ease-in-out",
+                scrolled && "backdrop-blur-lg bg-[#E7DBD6]/60"
             )}
         >
             <motion.div
-                className="uppercase text-xl px-6 container mx-auto overflow-hidden flex justify-between"
+                className="px-6 container mx-auto overflow-hidden flex justify-between items-center"
                 initial={animate && { opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ type: "easeInOut", duration: 0.3, delay: 0.9 }}
+                transition={{ type: "easeInOut", duration: 0.4, delay: 1 }}
             >
-                <div className="font-bold">
+                <div className="text-2xl uppercase font-bold">
                     <Link href="/">
                         Zack (w/o cat)
                     </Link>
                 </div>
-                <div className="font-semibold">
+                <div className="font-semibold flex items-center gap-8">
                     <Link href="/about">
                         About
+                    </Link>
+                    <Link href="/about">
+                        Resume
                     </Link>
                 </div>
             </motion.div>
