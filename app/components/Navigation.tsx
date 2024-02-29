@@ -34,7 +34,7 @@ export function Navigation({
                 animate={{ opacity: 1 }}
                 transition={{ type: "easeInOut", duration: 0.4, delay: 1 }}
             >
-                <div className="text-2xl uppercase font-bold">
+                <div className="text-xl md:text-2xl uppercase font-bold">
                     <Link href="/">
                         Zack (w/o cat)
                     </Link>
@@ -43,7 +43,7 @@ export function Navigation({
                     <Link href="/about">
                         About
                     </Link>
-                    <Link href="/about">
+                    <Link href="/resume">
                         Resume
                     </Link>
                 </div>
