@@ -1,5 +1,7 @@
 import { redirect } from "next/navigation";
 
 export async function GET() {
-    redirect("https://youtu.be/dQw4w9WgXcQ?si=9fU5-i5iSiOXKJrD");
+    const urls = ["https://youtu.be/dQw4w9WgXcQ?si=Sjy9hdDKQn2XOink"];
+
+    redirect(urls[Math.floor(Math.random() * urls.length)]);
 }
