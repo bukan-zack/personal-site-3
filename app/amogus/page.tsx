@@ -5,7 +5,7 @@ export default function Page() {
 
     setTimeout(() => {
         redirect(urls[Math.floor(Math.random() * urls.length)]);
-    }, 500);
+    }, 3000);
     
     return null;
 }
