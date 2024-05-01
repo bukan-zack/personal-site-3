@@ -43,9 +43,6 @@ export function Navigation({
                     <Link href="/about">
                         About
                     </Link>
-                    <Link href="/resume">
-                        Resume
-                    </Link>
                 </div>
             </motion.div>
         </nav>
